@@ -67,12 +67,11 @@ _ Use Cross Validation
 - Try alternative models (Logistic Regression, Random Forest)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 **Key Learning**
 
-This project highlights an important lesson:
-High training accuracy does not guarantee good model performance.
-Model evaluation must focus on generalization ability.
+- This project highlights an important lesson:
+-  High training accuracy does not guarantee good model performance.
+- Model evaluation must focus on generalization ability.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🚀 Future Improvements
