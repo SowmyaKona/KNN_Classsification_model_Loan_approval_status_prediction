@@ -18,7 +18,6 @@ The dataset contains applicant features such as:
 - Loan Amount
 - Credit History
 - Loan Status (Target Variable)
-
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ⚙️ Steps Performed
@@ -32,7 +31,7 @@ The dataset contains applicant features such as:
 - KNN model training
 - Model evaluation
 
-####################################################################################################################################################################################################
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 📊**Model Performance**
 
@@ -51,9 +50,7 @@ Overfitting occurs when a model:
 - Learns the training data too well
 - Captures noise and patterns specific to training data
 - Fails to generalize to unseen data
-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 **Why Overfitting Happens in KNN?**
 
 - Small K value can make the model too sensitive
@@ -61,7 +58,7 @@ Overfitting occurs when a model:
 - Noisy or imbalanced dataset
 - Insufficient data
 
-🛠 Techniques to Overcome Overfitting
+**Techniques to Overcome Overfitting**
 
 _ Use Cross Validation
 - Tune hyperparameter (Optimal K selection)
@@ -76,7 +73,6 @@ _ Use Cross Validation
 This project highlights an important lesson:
 High training accuracy does not guarantee good model performance.
 Model evaluation must focus on generalization ability.
-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🚀 Future Improvements
