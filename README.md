@@ -26,14 +26,17 @@ The dataset contains applicant features such as:
 - Train-Test split
 - Handling missing values
 - Handling Outliers
-- Encoding categorical features
-- Feature scaling (StandardScaler)
-- KNN model training
-- Model evaluation
+- Preprocessing using ColumnTransformer:
+  - OneHotEncoding for categorical features
+  - StandardScaler for numerical features
+- Baseline KNN model training
+- Cross Validation (5-Fold)
+- Hyperparameter tuning using GridSearchCV
+- Final model evaluation
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-📊**Model Performance**
+📊**Model Performance before cross validation & HyperParameter Tuning **
 
 - Training Accuracy: 75%
 - Testing Accuracy: 57%
@@ -74,11 +77,22 @@ _ Use Cross Validation
 - Model evaluation must focus on generalization ability.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🚀 Future Improvements
+🚀** Model Improvement Using Cross Validation & Hyperparameter Tuning**
+- To address overfitting, the following steps were applied:
+- 5-Fold Cross Validation for reliable performance estimation
+- Hyperparameter tuning using GridSearchCV
+- Optimal selection of K (n_neighbors)
 
-- Apply K-Fold Cross Validation
-- Perform Hyperparameter tuning using GridSearchCV
-- Compare performance with other classification algorithms
+- Important:
+- Cross Validation improves reliability — not necessarily accuracy.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+📊 Improved Model Performance
+
+- Training Accuracy: 69%
+- Testing Accuracy: 66%
+- Cross Validation Mean Accuracy: 66%
+- This reduced the performance gap and improved model stability.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -92,6 +106,14 @@ Tech Stack
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 💡 Final Note
+📈 Before vs After Improvement
+
+| Stage             | Training Accuracy | Testing Accuracy |
+| ----------------- | ----------------- | ---------------- |
+| Initial Model     | 75%               | 57%              |
+| After CV & Tuning | 69%               | 66%              |
 
 In real-world Machine Learning projects, models may not always perform perfectly.
+Building a model is easy.
+Building a reliable model requires validation and tuning.
 Understanding why a model underperforms or overperforms is as important as building it.
